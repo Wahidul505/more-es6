@@ -3,16 +3,16 @@ class Active {
   address;
   phone;
   using = 'Instagram';
+  constructor(personName, personAddress, personPhone) {
+    this.name = personName;
+    this.address = personAddress;
+    this.phone = personPhone;
+  }
   isActive() {
     console.log(this.name, 'is active now!');
   }
   isOffline() {
     console.log(this.name, 'is offline from', this.address);
-  }
-  constructor(personName, personAddress, personPhone) {
-    this.name = personName;
-    this.address = personAddress;
-    this.phone = personPhone;
   }
 }
 
